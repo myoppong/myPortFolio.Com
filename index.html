@@ -7,15 +7,17 @@
     <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body class="bg-gray-900 text-white">
 
 
     <!-- Sidebar (Desktop) -->
-    <div class ="fixed w-64 h-full bg-gray-800 p-8 hidden md:block">
-        <h1 class ="text-xl font-bold">  Myo  </h1>
+    <div class="fixed w-64 h-full bg-gray-800 p-8 hidden md:block">
+        <h1 class="text-xl font-bold"> Myo </h1>
         <ul class="mt-5 space-y-3">
             <li class="menu-item flex items-center space-x-3" data-target="home">
                 <svg width="24" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +112,7 @@
             <li class="flex items-center space-x-3">
                 <svg width="24" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 8L12 13L21 8V18H3V8Z" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
+                        stroke-linejoin="round" />
                 </svg>
                 <a href="#contact" class="hover:text-purple-400">Contact</a>
             </li>
@@ -120,596 +122,725 @@
 
 
     <!-- Main Content Container -->
-<div class="content-container flex flex-col min-h-screen p-5 md:ml-64">
-    <div id="home" class="content-section relative w-full text-white p-5 md:mt-5 flex flex-col md:flex-row md:items-center">
-        
-        <!-- Text Content (Moves Below Image on Mobile) -->
-        <div class="text-center md:text-left flex-1 line-height: 3;">
-            <h2 class="text-lg sm:text-xl md:text-2xl font-light text-violet-600 dark:text-violet-400">
-                Hello, It's Me
-            </h2>
-            <h1 class="text-2xl sm:text-3xl md:mt-5 md:text-5xl font-bold text-white">
-             Michael Oppong
-            </h1>
-            <p class="text-sm sm:text-base md:text-lg max-w-2xl mx-auto lg:mx-0 text-gray-300 leading-relaxed mt-3">
-            An IT Professional specializing in <span class="text-violet-600 dark:text-violet-400 font-semibold">Web Development</span> and <span class="text-indigo-600 dark:text-indigo-400 font-semibold">Software Engineering</span>
-            </p>
-            <h1 class="text-3xl md:text-4xl font-bold mt-5">
-                I'm a <span id="typewriter" class="text-purple-400"></span>
-                <span id="cursor" class="inline-block w-2 h-6 bg-white"></span>
-            </h1>
-            
+    <div class="content-container flex flex-col min-h-screen p-5 md:ml-64">
+        <div id="home"
+            class="content-section relative w-full text-white p-5 md:mt-5 flex flex-col md:flex-row md:items-center">
 
-            <!-- Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-10">
-                <button onclick="window.open('https://drive.google.com/file/d/1XuPA1aXx294kL2Sgi-IxurQmno5ZwZfP/view?usp=sharing', '_blank')"
-                class="w-full md:w-auto px-6 md:px-8 py-2 md:py-3 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 text-white rounded-lg font-medium flex items-center justify-center gap-2 text-sm md:text-base shadow-lg hover:shadow-violet-500/25 transition-all"
-                tabindex="0" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <!-- Text Content (Moves Below Image on Mobile) -->
+            <div class="text-center md:text-left flex-1 line-height: 3;">
+                <h2 class="text-lg sm:text-xl md:text-2xl font-light text-violet-600 dark:text-violet-400">
+                    Hello, It's Me
+                </h2>
+                <h1 class="text-2xl sm:text-3xl md:mt-5 md:text-5xl font-bold text-white">
+                    Michael Oppong
+                </h1>
+                <p class="text-sm sm:text-base md:text-lg max-w-2xl mx-auto lg:mx-0 text-gray-300 leading-relaxed mt-3">
+                    An IT Professional specializing in <span
+                        class="text-violet-600 dark:text-violet-400 font-semibold">Web Development</span> and <span
+                        class="text-indigo-600 dark:text-indigo-400 font-semibold">Software Engineering</span>
+                </p>
+                <h1 class="text-3xl md:text-4xl font-bold mt-5">
+                    I'm a <span id="typewriter" class="text-purple-400"></span>
+                    <span id="cursor" class="inline-block w-2 h-6 bg-white"></span>
+                </h1>
 
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                    </path>
-                </svg>View Resume<span style="transform: translateX(-2.28965px);">→ </span>
 
-            </button>
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-10">
+                    <button
+                        onclick="window.open('https://drive.google.com/file/d/1XuPA1aXx294kL2Sgi-IxurQmno5ZwZfP/view?usp=sharing', '_blank')"
+                        class="w-full md:w-auto px-6 md:px-8 py-2 md:py-3 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 text-white rounded-lg font-medium flex items-center justify-center gap-2 text-sm md:text-base shadow-lg hover:shadow-violet-500/25 transition-all"
+                        tabindex="0" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
-            <button onclick="window.location.href='mailto:michaeloppong03@gmail.com'" 
-            class="relative group px-6 w-full sm:w-auto md:px-10 py-3 rounded-lg overflow-hidden bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-500 hover:to-purple-500 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
-            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-            <span class="relative z-10 text-white font-semibold flex items-center space-x-2">
-                <svg class="w-5 h-5 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 13.172l11-6.172v14h-22v-14l11 6.172zm-11-8.172v-2h22v2l-11 6.172-11-6.172z"/>
-                </svg>
-                <span>Connect with Me via Email</span>
-            </span>
-        </button>
-        
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>View Resume<span style="transform: translateX(-2.28965px);">→ </span>
+
+                    </button>
+
+                    <button onclick="window.location.href='mailto:michaeloppong03@gmail.com'"
+                        class="relative group px-6 w-full sm:w-auto md:px-10 py-3 rounded-lg overflow-hidden bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-500 hover:to-purple-500 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+                        <span
+                            class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                        <span class="relative z-10 text-white font-semibold flex items-center space-x-2">
+                            <svg class="w-5 h-5 fill-current text-white" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 13.172l11-6.172v14h-22v-14l11 6.172zm-11-8.172v-2h22v2l-11 6.172-11-6.172z" />
+                            </svg>
+                            <span>Connect with Me via Email</span>
+                        </span>
+                    </button>
+
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex gap-4 justify-center md:justify-start pt-9">
+                    <a href="https://github.com/myoppong"
+                        class="text-gray-900 hover:text-gray-700 text-2xl md:text-3xl">
+                        <i class="fa fa-github"></i>
+                    </a>
+
+                    <a href="https://x.com/michaeloppong03"
+                        class="text-blue-500 hover:text-blue-400 text-2xl md:text-3xl">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/michael-oppong-7336a9186/"
+                        class="text-blue-600 hover:text-blue-500 text-2xl md:text-3xl">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://wa.me/233547539112"
+                        class="text-green-500 hover:text-green-400 text-2xl md:text-3xl" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://instagram.com/michaeloppong03"
+                        class="text-pink-500 hover:text-pink-400 text-2xl md:text-3xl">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
             </div>
 
-            <!-- Social Icons -->
-<div class="flex gap-4 justify-center md:justify-start pt-9">
-    <a href="https://github.com/myoppong" 
-       class="text-gray-900 hover:text-gray-700 text-2xl md:text-3xl">
-        <i class="fa fa-github"></i>
-    </a>
+            <!-- Profile Image at the Right (Moves to Top on Mobile) -->
+            <div class="flex justify-center md:justify-end w-full md:w-auto order-first md:order-last md:mt-8 md:mr-8">
+                <div class="w-40 h-40 md:w-80 md:h-80 relative ">
+                    <!-- Gradient Background -->
+                    <div
+                        class="absolute inset-0 p-0.5 rounded-full bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-800">
+                        <div class="h-full w-full rounded-full bg-[#0D192C] overflow-hidden p-1">
+                            <img src="./images/IMG_5348.jpg" alt="Profile Picture"
+                                class="w-full h-full object-cover object-top">
+                        </div>
+                    </div>
 
-    <a href="https://x.com/michaeloppong03" 
-       class="text-blue-500 hover:text-blue-400 text-2xl md:text-3xl">
-        <i class="fa fa-twitter"></i>
-    </a>
+                    <!-- Top Right Icon -->
+                    <div class="absolute -right-6 top-6 bg-purple-500 p-3 rounded-full shadow-lg">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
 
-    <a href="https://www.linkedin.com/in/michael-oppong-7336a9186/" 
-       class="text-blue-600 hover:text-blue-500 text-2xl md:text-3xl">
-        <i class="fa fa-linkedin"></i>
-    </a>
+                    <!-- Bottom Left Icon -->
+                    <div class="absolute -left-6 bottom-6 bg-indigo-500 p-3 rounded-full shadow-lg">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
 
-    <a href="https://wa.me/233547539112" 
-   class="text-green-500 hover:text-green-400 text-2xl md:text-3xl" target="_blank">
-    <i class="fa fa-whatsapp"></i>
-</a>
-
-    <a href="https://instagram.com/michaeloppong03" 
-       class="text-pink-500 hover:text-pink-400 text-2xl md:text-3xl">
-        <i class="fa fa-instagram"></i>
-    </a>
-</div>
         </div>
 
-        <!-- Profile Image at the Right (Moves to Top on Mobile) -->
-        <div class="flex justify-center md:justify-end w-full md:w-auto order-first md:order-last md:mt-8 md:mr-8">
-            <div class="w-40 h-40 md:w-80 md:h-80 relative ">
-                <!-- Gradient Background -->
-                <div class="absolute inset-0 p-0.5 rounded-full bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-800">
-                    <div class="h-full w-full rounded-full bg-[#0D192C] overflow-hidden p-1">
-                        <img src="./images/IMG_5348.jpg" alt="Profile Picture" class="w-full h-full object-cover object-top">
+
+        <div id="about" class="content-section hidden w-full bg-gray-800 text-white p-5 rounded-lg">
+
+            <!-- About Me Section -->
+            <section id="about">
+                <div class="container  ">
+                    <!-- Section Title -->
+                    <div class="text-center mb-8 md:mb-12 relative z-10">
+                        <h2 class="text-3xl md:text-4xl font-bold text-violet-400">About Me</h2>
+                        <div
+                            class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
+                        <!-- Image Section -->
+                        <div class="flex justify-center">
+                            <div class="group">
+                                <img src="./images/kk.svg" alt="Profile Image"
+                                    class="hidden sm:block w-64 h-64 object-cover rounded-full shadow-lg transition-transform duration-200 group-hover:scale-105 group-hover:rotate-1 group-hover:translate-x-1">
+                            </div>
+                        </div>
+
+                        <!-- Text Section -->
+                        <div class="text-white space-y-4 text-lg">
+                            <p
+                                class="opacity-90 leading-relaxed text-gray-100 dark:text-gray-200 text-lg tracking-wide font-medium space-y-4">
+                                I am a <span class="font-bold text-indigo-700 dark:text-indigo-400">dedicated IT
+                                    professional</span> specializing in
+                                <span class="font-semibold text-blue-600 dark:text-blue-400">web development and
+                                    programming</span>.I enjoy creating efficient, functional, and visually appealing
+                                websites and web applications using modern technologies.
+                            </p>
+
+                            <p class="mt-4 text-indigo-600 dark:text-indigo-400 font-semibold space-y-2">
+                                With a strong focus on user experience and a commitment to mastering the latest
+                                programming practices,
+                                I strive to develop innovative solutions that <span
+                                    class="underline decoration-wavy decoration-indigo-500 dark:decoration-indigo-300">exceed
+                                    expectations</span>.
+                            </p>
+
+                            <p class="mt-4 text-gray-100 dark:text-gray-100 italic text-lg tracking-wide">
+                                I am a <span class="text-emerald-600 dark:text-emerald-400">quick learner</span> who is
+                                always enthusiastic about expanding my technical skills and taking on new challenges.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="mt-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-violet-400 text-center">Soft Skils</h2>
+                        <div
+                            class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full mb-8">
+
+                        </div>
+
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Good
+                                Communication</span>
+                            <span
+                                class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Strong
+                                Problem-Solving Skills</span>
+                            <span
+                                class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Time
+                                Management</span>
+                            <span
+                                class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Adaptability
+                                & Continuous Learning</span>
+                            <span
+                                class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Teamwork
+                                & Collaboration</span>
+                            <span
+                                class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Creativity
+                                & Innovation</span>
+                            <span
+                                class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Strong
+                                analytical and decision-making skills</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Top Right Icon -->
-                <div class="absolute -right-6 top-6 bg-purple-500 p-3 rounded-full shadow-lg">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                    </svg>
+                <!-- Education Section -->
+                <div class="mt-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-violet-400 text-center">Education</h2>
+                    <div
+                        class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full mb-8">
+                    </div>
                 </div>
 
-                <!-- Bottom Left Icon -->
-                <div class="absolute -left-6 bottom-6 bg-indigo-500 p-3 rounded-full shadow-lg">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                              d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4"></path>
-                    </svg>
+                <div class="relative mt-10">
+                    <!-- Central vertical line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-400"></div>
+
+                    <ul class="timeline max-w-3xl mx-auto relative">
+
+                        <!-- Lead For Ghana Fellowship -->
+                        <li class="relative flex justify-between items-center w-full mb-10">
+                            <div class="w-6/12"></div> <!-- Left Space -->
+                            <div class="w-1/12 flex justify-center">
+                                <div class="w-4 h-4 bg-[#211638be] rounded-full"></div> <!-- Circle on Line -->
+                            </div>
+                            <div class="w-5/12 bg-[#211638be] rounded-xl p-4 text-white">
+                                <time class="block font-mono italic">Awaiting Certificate</time>
+                                <p class="font-medium text-xl">Web Developer</p>
+                                <p class="text-sm">Meltwater Enterprenueral School</p>
+                            </div>
+                        </li>
+
+                        <!-- Laundry Attendant -->
+                        <li class="relative flex justify-between items-center w-full mb-10">
+                            <div class="w-5/12 bg-[#211638be] rounded-xl p-4 text-white text-left">
+                                <time class="block font-mono italic">2023</time>
+                                <p class="font-medium text-xl">Bachelor of Science in Information technology</p>
+                                <p class="text-sm">University of Ghana</p>
+                            </div>
+                            <div class="w-1/12 flex justify-center">
+                                <div class="w-4 h-4 bg-[#211638be] rounded-full"></div> <!-- Circle on Line -->
+                            </div>
+                            <div class="w-5/12"></div> <!-- Right Space -->
+                        </li>
+
+                        <!-- Education: University -->
+                        <li class="relative flex justify-between items-center w-full mb-10">
+                            <div class="w-6/12"></div> <!-- Left Space -->
+                            <div class="w-1/12 flex justify-center">
+                                <div class="w-4 h-4 bg-[#211638be] rounded-full"></div> <!-- Circle on Line -->
+                            </div>
+                            <div class="w-5/12 bg-[#211638be] rounded-xl p-4 text-white">
+                                <time class="block font-mono italic">2018</time>
+                                <p class="font-medium text-xl">Diploma in Networking Engineering</p>
+                                <p class="text-sm">Soul Food ICT College</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="mt-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-violet-400 text-center">Job Experience</h2>
+                    <div
+                        class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full mb-8">
+                    </div>
+                </div>
+
+                <div class="relative mt-10">
+                    <!-- Central glowing vertical line -->
+                    <div
+                        class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-500 via-blue-400 to-violet-600 shadow-lg">
+                    </div>
+
+                    <ul class="timeline max-w-3xl mx-auto relative">
+
+                        <!-- Lead For Ghana (Volunteer) -->
+                        <li class="relative flex justify-between items-center w-full mb-16">
+                            <div class="w-5/12"></div> <!-- Left Space -->
+                            <div class="w-1/12 flex justify-center">
+                                <div
+                                    class="w-6 h-6 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full border-4 border-white shadow-lg animate-pulse">
+                                </div> <!-- Glowing Circle -->
+                            </div>
+                            <div
+                                class="w-fit bg-gradient-to-r from-purple-700 to-indigo-600 text-white rounded-xl p-3.5 shadow-lg hover:scale-105 transform transition duration-300">
+                                <time class="block font-mono italic text-sm opacity-80">Oct 2024 - Present</time>
+                                <h3 class="font-semibold text-xl mb-2">Lead For Ghana <br>~ Fellow (Volunteer)</h3>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Advocate for improvement in school facilities and essential resources.</li>
+                                    <li>Collaborated with educators for impactful change in education.</li>
+                                    <li>Lead technology integration for digital literacy in classrooms.</li>
+                                    <li>Mentored peer guides for the National Values Learning Community by TTELL.</li>
+                                    <li>Provided learners with leadership mentoring and career guidance.</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- NADMO (National Service) -->
+                        <li class="relative flex justify-between items-center w-full mb-16">
+                            <div
+                                class="w-fit bg-gradient-to-r from-indigo-700 to-blue-600 text-white rounded-xl p-5 shadow-lg text-left hover:scale-105 transform transition duration-300">
+                                <time class="block font-mono italic text-sm opacity-80">Oct 2023 - Sep 2024</time>
+                                <h3 class="font-semibold text-xl mb-2">NADMO <br>~ Administrative Assistant (National
+                                    Service Person)</h3>
+                                <ul class="list-disc pr-5 text-sm space-y-1">
+                                    <li>Managed documentation and coordinated disaster response teams.</li>
+                                    <li>Maintained databases for disaster incidents and resource planning.</li>
+                                    <li>Facilitated communication with government agencies for disaster management.</li>
+                                    <li>Oversaw filing systems for accurate record-keeping.</li>
+                                    <li>Assisted in budgeting, procurement, and inventory management.</li>
+                                </ul>
+                            </div>
+                            <div class="w-1/12 flex justify-center">
+                                <div
+                                    class="w-6 h-6 bg-gradient-to-r from-blue-500 to-violet-500 rounded-full border-4 border-white shadow-lg animate-pulse">
+                                </div> <!-- Glowing Circle -->
+                            </div>
+                            <div class="w-5/12"></div> <!-- Right Space -->
+                        </li>
+
+                        <!-- Elect International School (Part-Time) -->
+                        <li class="relative flex justify-between items-center w-full mb-16">
+                            <div class="w-5/12"></div> <!-- Left Space -->
+                            <div class="w-1/12 flex justify-center">
+                                <div
+                                    class="w-6 h-6 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full border-4 border-white shadow-lg animate-pulse">
+                                </div> <!-- Glowing Circle -->
+                            </div>
+                            <div
+                                class="w-fit bg-gradient-to-r from-purple-700 to-blue-600 text-white rounded-xl p-4 shadow-lg hover:scale-105 transform transition duration-300">
+                                <time class="block font-mono italic text-sm opacity-80">Oct 2023 - Sep 2024</time>
+                                <h3 class="font-semibold text-xl mb-2">Elect International School <br>~ Mathematics
+                                    Tutor (Part-Time)</h3>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Created and implemented lesson plans for diverse math topics.</li>
+                                    <li>Fostered student engagement through dynamic teaching practices.</li>
+                                    <li>Integrated technology for interactive learning experiences.</li>
+                                    <li>Developed teaching resources like worksheets and exam papers.</li>
+                                    <li>Participated in professional development to enhance teaching skills.</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </section>
+
+        </div>
+
+        <div id="projects" class="content-section hidden w-full text-white p-5 rounded-lg">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <div class="text-center mb-8 md:mb-12 relative z-10">
+                    <h2 class="text-3xl md:text-4xl font-bold text-violet-400">My Projects</h2>
+                    <div
+                        class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- RentMarkt -->
+                    <div class="relative group overflow-hidden rounded-lg">
+                        <img src="./images/rent.png" alt="RentMarkt"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
+                            <h3 class="text-lg font-semibold text-white">RentMarkt</h3>
+                            <p class="text-sm text-gray-300 text-center">A platform for finding rooms for rent in Ghana.
+                            </p>
+                            <a href="https://your-rentmarkt-link.com" target="_blank"
+                                class="mt-2 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View
+                                Site</a>
+                        </div>
+                    </div>
+
+                    <!-- Hotel Booking Website -->
+                    <div class="relative group overflow-hidden rounded-lg">
+                        <img src="./images/hotel.png" alt="Hotel Booking"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
+                            <h3 class="text-lg font-semibold text-white">Hotel Booking</h3>
+                            <p class="text-sm text-gray-300 text-center">A seamless hotel booking website.</p>
+                            <a href="https://your-hotel-booking-link.com" target="_blank"
+                                class="mt-2 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View
+                                Site</a>
+                        </div>
+                    </div>
+
+                    <!-- Said Africa -->
+                    <div class="relative group overflow-hidden rounded-lg">
+                        <img src="./images/news.png" alt="Said Africa"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
+                            <h3 class="text-lg font-semibold text-white">Said Africa</h3>
+                            <p class="text-sm text-gray-300 text-center">A news portal for Africa.</p>
+                            <a href="https://your-said-africa-link.com" target="_blank"
+                                class="mt-2 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View
+                                Site</a>
+                        </div>
+                    </div>
+
+                    <!-- Student Records System REST API -->
+                    <div
+                        class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
+                        <i
+                            class="fa-solid fa-database text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
+                        <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Student Records
+                            System API</h3>
+                        <p class="text-sm text-gray-300 text-center mt-2">Built to handle CRUD operations for student
+                            data.</p>
+                        <a href="https://github.com/your-github-link" target="_blank"
+                            class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View
+                            on GitHub</a>
+                    </div>
+
+                    <!-- Gift Wishlist App REST API -->
+                    <div
+                        class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
+                        <i
+                            class="fa-solid fa-gift text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
+                        <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Gift Wishlist
+                            App API</h3>
+                        <p class="text-sm text-gray-300 text-center mt-2">Manages CRUD operations for gift wishlists.
+                        </p>
+                        <a href="https://github.com/your-github-link" target="_blank"
+                            class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View
+                            on GitHub</a>
+                    </div>
+
+                    <!-- Advertising Portal REST API -->
+                    <div
+                        class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
+                        <i
+                            class="fa-solid fa-gift text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
+                        <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Advertising
+                            Portal API</h3>
+                        <p class="text-sm text-gray-300 text-center mt-2">Handles CRUD operations for ads and client
+                            data.</p>
+                        <a href="https://github.com/your-github-link" target="_blank"
+                            class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View
+                            on GitHub</a>
+                    </div>
+
+                    <!-- Library Management App -->
+                    <div
+                        class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
+                        <i
+                            class="fa-solid fa-book text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
+                        <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Library
+                            Management App</h3>
+                        <p class="text-sm text-gray-300 text-center mt-2">Manages CRUD operations for books and members.
+                        </p>
+                        <a href="https://github.com/your-github-link" target="_blank"
+                            class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View
+                            on GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div>
 
-
-    <div id="about" class="content-section hidden w-full bg-gray-800 text-white p-5 rounded-lg">
-       
-         <!-- About Me Section -->
-    <section id="about">
-        <div class="container  ">
-            <!-- Section Title -->
+        <div id="skills" class="content-section hidden w-full bg-gray-800 text-white p-5 rounded-lg">
             <div class="text-center mb-8 md:mb-12 relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold text-violet-400">About Me</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
-                <!-- Image Section -->
-                <div class="flex justify-center">
-                    <div class="group">
-                        <img src="./images/kk.svg" 
-                            alt="Profile Image" 
-                            class="hidden sm:block w-64 h-64 object-cover rounded-full shadow-lg transition-transform duration-200 group-hover:scale-105 group-hover:rotate-1 group-hover:translate-x-1">
-                    </div>
-                </div>
-
-                <!-- Text Section -->
-                <div class="text-white space-y-4 text-lg">
-                    <p class="opacity-90 leading-relaxed text-gray-100 dark:text-gray-200 text-lg tracking-wide font-medium space-y-4">
-                        I am a <span class="font-bold text-indigo-700 dark:text-indigo-400">dedicated IT professional</span> specializing in 
-                        <span class="font-semibold text-blue-600 dark:text-blue-400">web development and programming</span>.I enjoy creating efficient, functional, and visually appealing websites and web applications using modern technologies.
-                    </p>
-                    
-                    <p class="mt-4 text-indigo-600 dark:text-indigo-400 font-semibold space-y-2">
-                        With a strong focus on user experience and a commitment to mastering the latest programming practices, 
-                        I strive to develop innovative solutions that <span class="underline decoration-wavy decoration-indigo-500 dark:decoration-indigo-300">exceed expectations</span>.
-                    </p>
-                    
-                    <p class="mt-4 text-gray-100 dark:text-gray-100 italic text-lg tracking-wide">
-                        I am a <span class="text-emerald-600 dark:text-emerald-400">quick learner</span> who is always enthusiastic about expanding my technical skills and taking on new challenges.
-                    </p>
-                    
-                
+                <h2 class="text-3xl md:text-4xl font-bold text-violet-400">Skills And Technologies I Use</h2>
+                <div
+                    class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full">
                 </div>
             </div>
 
-            <!-- Skills Section -->
-            <div class="mt-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-violet-400 text-center">Soft Skils</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full mb-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
 
+                <!-- HTML Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-html5 text-orange-500 text-6xl mb-4 size-6 animate-bounce ...  "></i>
+                    <h3 class="text-lg font-semibold text-white mt-6">HTML</h3>
                 </div>
-                
-                <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Good Communication</span>
-                    <span class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Strong Problem-Solving Skills</span>
-                    <span class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Time Management</span>
-                    <span class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Adaptability & Continuous Learning</span>
-                    <span class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Teamwork & Collaboration</span>
-                    <span class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Creativity & Innovation</span>
-                    <span class="px-4 py-2 rounded-full text-sm md:text-base bg-violet-500/20 text-violet-300">Strong analytical and decision-making skills</span>
+
+                <!-- CSS Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-css3 text-blue-500 text-6xl mb-4 size-6 animate-bounce ...   "></i>
+                    <h3 class="text-lg font-semibold text-white mt-.6">CSS</h3>
                 </div>
+
+                <!-- Tailwind CSS Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-paint-brush text-cyan-500 text-6xl mb-4 size-6 animate-bounce ..."></i>
+                    <h3 class="text-lg font-semibold text-white mt-6">Tailwind CSS</h3>
+                </div>
+
+                <!-- JavaScript Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-code text-yellow-500 text-6xl mb-4 size-6 animate-bounce ..."></i>
+                    <h3 class="text-lg font-semibold text-white mt-6">JavaScript</h3>
+                </div>
+
+                <!-- Node.js Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-leaf text-green-500 text-6xl mb-4 size-6 animate-bounce ..."></i>
+                    <h3 class="text-lg font-semibold text-white mt-6">Node.js</h3>
+                </div>
+
+                <!-- Express.js Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-server text-gray-400 text-6xl mb-4 size-6 animate-bounce ..."></i>
+                    <h3 class="text-lg font-semibold text-white mt-6">Express.js</h3>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-github text-white text-6xl mb-4 size-6 animate-bounce ..."></i>
+                    <h3 class="text-lg font-semibold text-white mt-6">GitHub</h3>
+                </div>
+
+                <!-- Python Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-code text-blue-300 text-6xl mb-4 size-6 animate-bounce ..."></i>
+                    <h3 class="text-lg font-semibold text-white mt-6">Python</h3>
+                </div>
+
+                <!-- Java Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-coffee text-red-500 text-6xl mb-4 size-6 animate-bounce ..."></i>
+                    <h3 class="text-lg font-semibold text-white mt-6">Java</h3>
+                </div>
+
+
+                <!-- ReactJS Card -->
+                <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fab fa-react text-blue-400 text-6xl mb-4 animate-spin"></i>
+                    <h3 class="text-lg font-semibold text-white mt-6">ReactJS</h3>
+                  </div>
+
             </div>
+
         </div>
 
-        <!-- Education Section -->
-        <div class="mt-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-violet-400 text-center">Education</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full mb-8"></div>
-        </div>
-
-        <div class="relative mt-10">
-            <!-- Central vertical line -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-400"></div>
-
-            <ul class="timeline max-w-3xl mx-auto relative">
-                
-                <!-- Lead For Ghana Fellowship -->
-                <li class="relative flex justify-between items-center w-full mb-10">
-                    <div class="w-6/12"></div> <!-- Left Space -->
-                    <div class="w-1/12 flex justify-center">
-                        <div class="w-4 h-4 bg-[#211638be] rounded-full"></div> <!-- Circle on Line -->
-                    </div>
-                    <div class="w-5/12 bg-[#211638be] rounded-xl p-4 text-white">
-                        <time class="block font-mono italic">Awaiting Certificate</time>
-                        <p class="font-medium text-xl">Web Developer</p>
-                        <p class="text-sm">Meltwater Enterprenueral School</p>
-                    </div>
-                </li>
-
-                <!-- Laundry Attendant -->
-                <li class="relative flex justify-between items-center w-full mb-10">
-                    <div class="w-5/12 bg-[#211638be] rounded-xl p-4 text-white text-left">
-                        <time class="block font-mono italic">2023</time>
-                        <p class="font-medium text-xl">Bachelor of Science in Information technology</p>
-                        <p class="text-sm">University of Ghana</p>
-                    </div>
-                    <div class="w-1/12 flex justify-center">
-                        <div class="w-4 h-4 bg-[#211638be] rounded-full"></div> <!-- Circle on Line -->
-                    </div>
-                    <div class="w-5/12"></div> <!-- Right Space -->
-                </li>
-
-                <!-- Education: University -->
-                <li class="relative flex justify-between items-center w-full mb-10">
-                    <div class="w-6/12"></div> <!-- Left Space -->
-                    <div class="w-1/12 flex justify-center">
-                        <div class="w-4 h-4 bg-[#211638be] rounded-full"></div> <!-- Circle on Line -->
-                    </div>
-                    <div class="w-5/12 bg-[#211638be] rounded-xl p-4 text-white">
-                        <time class="block font-mono italic">2018</time>
-                        <p class="font-medium text-xl">Diploma in Networking Engineering</p>
-                        <p class="text-sm">Soul Food ICT College</p>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-
-
-        <div class="mt-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-violet-400 text-center">Job Experience</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full mb-8"></div>
-        </div>
-        
-        <div class="relative mt-10">
-            <!-- Central glowing vertical line -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-500 via-blue-400 to-violet-600 shadow-lg"></div>
-        
-            <ul class="timeline max-w-3xl mx-auto relative">
-        
-                <!-- Lead For Ghana (Volunteer) -->
-                <li class="relative flex justify-between items-center w-full mb-16">
-                    <div class="w-5/12"></div> <!-- Left Space -->
-                    <div class="w-1/12 flex justify-center">
-                        <div class="w-6 h-6 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full border-4 border-white shadow-lg animate-pulse"></div> <!-- Glowing Circle -->
-                    </div>
-                    <div class="w-fit bg-gradient-to-r from-purple-700 to-indigo-600 text-white rounded-xl p-3.5 shadow-lg hover:scale-105 transform transition duration-300">
-                        <time class="block font-mono italic text-sm opacity-80">Oct 2024 - Present</time>
-                        <h3 class="font-semibold text-xl mb-2">Lead For Ghana <br>~ Fellow (Volunteer)</h3>
-                        <ul class="list-disc pl-5 text-sm space-y-1">
-                            <li>Advocate for improvement in school facilities and essential resources.</li>
-                            <li>Collaborated with educators for impactful change in education.</li>
-                            <li>Lead technology integration for digital literacy in classrooms.</li>
-                            <li>Mentored peer guides for the National Values Learning Community by TTELL.</li>
-                            <li>Provided learners with leadership mentoring and career guidance.</li>
-                        </ul>
-                    </div>
-                </li>
-        
-                <!-- NADMO (National Service) -->
-                <li class="relative flex justify-between items-center w-full mb-16">
-                    <div class="w-fit bg-gradient-to-r from-indigo-700 to-blue-600 text-white rounded-xl p-5 shadow-lg text-left hover:scale-105 transform transition duration-300">
-                        <time class="block font-mono italic text-sm opacity-80">Oct 2023 - Sep 2024</time>
-                        <h3 class="font-semibold text-xl mb-2">NADMO <br>~ Administrative Assistant (National Service Person)</h3>
-                        <ul class="list-disc pr-5 text-sm space-y-1">
-                            <li>Managed documentation and coordinated disaster response teams.</li>
-                            <li>Maintained databases for disaster incidents and resource planning.</li>
-                            <li>Facilitated communication with government agencies for disaster management.</li>
-                            <li>Oversaw filing systems for accurate record-keeping.</li>
-                            <li>Assisted in budgeting, procurement, and inventory management.</li>
-                        </ul>
-                    </div>
-                    <div class="w-1/12 flex justify-center">
-                        <div class="w-6 h-6 bg-gradient-to-r from-blue-500 to-violet-500 rounded-full border-4 border-white shadow-lg animate-pulse"></div> <!-- Glowing Circle -->
-                    </div>
-                    <div class="w-5/12"></div> <!-- Right Space -->
-                </li>
-        
-                <!-- Elect International School (Part-Time) -->
-                <li class="relative flex justify-between items-center w-full mb-16">
-                    <div class="w-5/12"></div> <!-- Left Space -->
-                    <div class="w-1/12 flex justify-center">
-                        <div class="w-6 h-6 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full border-4 border-white shadow-lg animate-pulse"></div> <!-- Glowing Circle -->
-                    </div>
-                    <div class="w-fit bg-gradient-to-r from-purple-700 to-blue-600 text-white rounded-xl p-4 shadow-lg hover:scale-105 transform transition duration-300">
-                        <time class="block font-mono italic text-sm opacity-80">Oct 2023 - Sep 2024</time>
-                        <h3 class="font-semibold text-xl mb-2">Elect International School  <br>~ Mathematics Tutor (Part-Time)</h3>
-                        <ul class="list-disc pl-5 text-sm space-y-1">
-                            <li>Created and implemented lesson plans for diverse math topics.</li>
-                            <li>Fostered student engagement through dynamic teaching practices.</li>
-                            <li>Integrated technology for interactive learning experiences.</li>
-                            <li>Developed teaching resources like worksheets and exam papers.</li>
-                            <li>Participated in professional development to enhance teaching skills.</li>
-                        </ul>
-                    </div>
-                </li>
-        
-            </ul>
-        </div>
-        
-    </section>
-
-    </div>
-
-    <div id="projects" class="content-section hidden w-full text-white p-5 rounded-lg">
-        <div class="max-w-6xl mx-auto px-6 py-12">
+        <div id="services" class="content-section hidden w-full bg-gray-800 text-white p-5 rounded-lg">
             <div class="text-center mb-8 md:mb-12 relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold text-violet-400">My Projects</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full"></div>
+                <h2 class="text-3xl md:text-4xl font-bold text-violet-400">My Services</h2>
+                <div
+                    class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full">
+                </div>
             </div>
-    
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- RentMarkt -->
-                <div class="relative group overflow-hidden rounded-lg">
-                    <img src="./images/rent.png" alt="RentMarkt" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
-                        <h3 class="text-lg font-semibold text-white">RentMarkt</h3>
-                        <p class="text-sm text-gray-300 text-center">A platform for finding rooms for rent in Ghana.</p>
-                        <a href="https://your-rentmarkt-link.com" target="_blank" class="mt-2 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Site</a>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+
+                <!-- Website Development -->
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
+                    <h3
+                        class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">
+                        Website Development</h3>
+                    <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+                        Crafting stunning, user-friendly websites that are responsive, fast, and optimized for all
+                        devices. I blend creativity with functionality to showcase your brand online.
+                    </p>
+                </div>
+
+                <!-- Web App Development -->
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
+                    <h3
+                        class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">
+                        Web App Development</h3>
+                    <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+                        Building interactive, scalable, and dynamic web applications tailored to solve complex problems
+                        and deliver seamless user experiences.
+                    </p>
+                </div>
+
+                <!-- E-commerce Solutions -->
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
+                    <h3
+                        class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">
+                        E-commerce Solutions</h3>
+                    <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+                        Developing powerful, secure, and high-performing online stores with payment integrations,
+                        inventory management, and user-friendly interfaces to boost sales.
+                    </p>
+                </div>
+
+                <!-- Dropshipping Solutions -->
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
+                    <h3
+                        class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">
+                        Dropshipping Solutions</h3>
+                    <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+                        Creating efficient dropshipping systems that automate inventory management, streamline order
+                        fulfillment, and simplify business operations.
+                    </p>
+                </div>
+
+                <!-- Institutional Management Softwares -->
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
+                    <h3
+                        class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">
+                        Institutional Management Softwares</h3>
+                    <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+                        Designing customized software for schools, hospitals, churches and companies to enhance
+                        administration, streamline communication, and boost productivity.
+                    </p>
+                </div>
+
+                <!-- Inventory and Sales Management Softwares -->
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
+                    <h3
+                        class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">
+                        Inventory & Sales Management</h3>
+                    <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+                        Building efficient systems to manage inventory, track sales, generate reports, and optimize
+                        business operations for better decision-making.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div id="contact" class="content-section hidden w-full h-full text-white p-5 rounded-lg ">
+
+            <div class="text-center mb-8 md:mb-12 relative z-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-violet-400">Contact Me</h2>
+                <div
+                    class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500   to-purple-600 mx-auto rounded-full">
+
+                </div>
+            </div>
+
+
+            <div class="max-w-4xl mx-auto mt-10">
+                <div class="grid md:grid-cols-2 gap-8 ">
+
+                    <!-- Contact Info Section -->
+                    <div class="space-y-6">
+
+                        <!-- Phone -->
+                        <a href="tel:0547539112" class="flex items-center space-x-4 hover:opacity-80 transition">
+                            <div class="p-3 rounded-full bg-violet-500/20">
+                                <i class="fa fa-phone text-violet-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-200">Phone</h3>
+                                <p class="text-gray-400">+233 547539112</p>
+                            </div>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:michaeloppong03@gmail.com"
+                            class="flex items-center space-x-4 hover:opacity-80 transition">
+                            <div class="p-3 rounded-full bg-violet-500/20">
+                                <i class="fa fa-envelope text-violet-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-200">Email</h3>
+                                <p class="text-gray-400 break-all">michaeloppong03@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <!-- Location -->
+                        <a href="https://www.google.com/maps/accra" target="_blank"
+                            class="flex items-center space-x-4 hover:opacity-80 transition">
+                            <div class="p-3 rounded-full bg-violet-500/20">
+                                <i class="fa fa-map-marker text-violet-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-200">Location</h3>
+                                <p class="text-gray-400">Accra, Ghana</p>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/michael-oppong-7336a9186/" target="_blank"
+                            class="flex items-center space-x-4 hover:opacity-80 transition">
+                            <div class="p-3 rounded-full bg-violet-500/20">
+                                <i class="fa fa-linkedin text-violet-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-200">LinkedIn</h3>
+                                <p class="text-gray-400">linkedin.coom/michael</p>
+                            </div>
+                        </a>
+
                     </div>
-                </div>
-    
-                <!-- Hotel Booking Website -->
-                <div class="relative group overflow-hidden rounded-lg">
-                    <img src="./images/hotel.png" alt="Hotel Booking" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
-                        <h3 class="text-lg font-semibold text-white">Hotel Booking</h3>
-                        <p class="text-sm text-gray-300 text-center">A seamless hotel booking website.</p>
-                        <a href="https://your-hotel-booking-link.com" target="_blank" class="mt-2 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Site</a>
-                    </div>
-                </div>
-    
-                <!-- Said Africa -->
-                <div class="relative group overflow-hidden rounded-lg">
-                    <img src="./images/news.png" alt="Said Africa" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
-                        <h3 class="text-lg font-semibold text-white">Said Africa</h3>
-                        <p class="text-sm text-gray-300 text-center">A news portal for Africa.</p>
-                        <a href="https://your-said-africa-link.com" target="_blank" class="mt-2 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Site</a>
-                    </div>
-                </div>
-    
-                <!-- Student Records System REST API -->
-                <div class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
-                    <i class="fa-solid fa-database text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
-                    <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Student Records System API</h3>
-                    <p class="text-sm text-gray-300 text-center mt-2">Built to handle CRUD operations for student data.</p>
-                    <a href="https://github.com/your-github-link" target="_blank" class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View on GitHub</a>
-                </div>
-    
-                <!-- Gift Wishlist App REST API -->
-                <div class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
-                    <i class="fa-solid fa-gift text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
-                    <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Gift Wishlist App API</h3>
-                    <p class="text-sm text-gray-300 text-center mt-2">Manages CRUD operations for gift wishlists.</p>
-                    <a href="https://github.com/your-github-link" target="_blank" class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View on GitHub</a>
-                </div>
-    
-                <!-- Advertising Portal REST API -->
-                <div class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
-                    <i class="fa-solid fa-gift text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
-                    <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Advertising Portal API</h3>
-                    <p class="text-sm text-gray-300 text-center mt-2">Handles CRUD operations for ads and client data.</p>
-                    <a href="https://github.com/your-github-link" target="_blank" class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View on GitHub</a>
-                </div>
-    
-                <!-- Library Management App -->
-                <div class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
-                    <i class="fa-solid fa-book text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
-                    <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Library Management App</h3>
-                    <p class="text-sm text-gray-300 text-center mt-2">Manages CRUD operations for books and members.</p>
-                    <a href="https://github.com/your-github-link" target="_blank" class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View on GitHub</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div id="skills" class="content-section hidden w-full bg-gray-800 text-white p-5 rounded-lg">
-        <div class="text-center mb-8 md:mb-12 relative z-10">
-            <h2 class="text-3xl md:text-4xl font-bold text-violet-400">Skills And Technologies I Use</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full"></div>
-        </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
-  
-            <!-- HTML Card -->
-            <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-              <i class="fa fa-html5 text-orange-500 text-6xl mb-4 size-6 animate-bounce ...  "></i>
-              <h3 class="text-lg font-semibold text-white mt-6" >HTML</h3>
-            </div>
-          
-            <!-- CSS Card -->
-            <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-              <i class="fa fa-css3 text-blue-500 text-6xl mb-4 size-6 animate-bounce ...   "></i>
-              <h3 class="text-lg font-semibold text-white mt-.6">CSS</h3>
-            </div>
-          
-            <!-- Tailwind CSS Card -->
-            <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-              <i class="fa fa-paint-brush text-cyan-500 text-6xl mb-4 size-6 animate-bounce ..."></i>
-              <h3 class="text-lg font-semibold text-white mt-6">Tailwind CSS</h3>
-            </div>
-          
-            <!-- JavaScript Card -->
-            <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-              <i class="fa fa-code text-yellow-500 text-6xl mb-4 size-6 animate-bounce ..."></i>
-              <h3 class="text-lg font-semibold text-white mt-6">JavaScript</h3>
-            </div>
-          
-            <!-- Node.js Card -->
-            <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-              <i class="fa fa-leaf text-green-500 text-6xl mb-4 size-6 animate-bounce ..."></i>
-              <h3 class="text-lg font-semibold text-white mt-6">Node.js</h3>
-            </div>
-          
-            <!-- Express.js Card -->
-            <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-              <i class="fa fa-server text-gray-400 text-6xl mb-4 size-6 animate-bounce ..."></i>
-              <h3 class="text-lg font-semibold text-white mt-6">Express.js</h3>
-            </div>
-          
-            <!-- GitHub Card -->
-            <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-              <i class="fa fa-github text-white text-6xl mb-4 size-6 animate-bounce ..."></i>
-              <h3 class="text-lg font-semibold text-white mt-6">GitHub</h3>
-            </div>
-          
-            <!-- Python Card -->
-            <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-              <i class="fa fa-code text-blue-300 text-6xl mb-4 size-6 animate-bounce ..."></i>
-              <h3 class="text-lg font-semibold text-white mt-6">Python</h3>
-            </div>
-          
-            <!-- Java Card -->
-            <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-              <i class="fa fa-coffee text-red-500 text-6xl mb-4 size-6 animate-bounce ..."></i>
-              <h3 class="text-lg font-semibold text-white mt-6">Java</h3>
-            </div>
-          
 
-            <!-- ReactJS Card -->
-   <div class="flex flex-col items-center bg-gray-300 p-6 rounded-lg shadow-lg">
-    <i class="fab fa-react text-white-800 text-6xl mb-4 animate-spin"></i>
-    <h3 class="text-lg font-semibold text-white mt-6">ReactJS</h3>
-  </div>
-  
-          </div>
+                    <!-- Contact Form -->
+                    <form class="space-y-4">
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="w-full p-3 rounded-lg bg-white-800 text-gray-200 border-gray-700 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-colors"
+                            required>
+
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="w-full p-3 rounded-lg bg-white-800 text-gray-200 border-gray-700 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-colors"
+                            required>
+
+                        <textarea name="message" placeholder="Your Message" rows="4"
+                            class="w-full p-3 rounded-lg bg-white-800 text-gray-200 border-gray-700 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-colors"
+                            required></textarea>
+
+                        <button type="submit"
+                            class="w-full py-3 px-6 rounded-lg bg-violet-800 hover:bg-violet-700 text-white font-semibold transition-colors">Send
+                            Message</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
 
     </div>
 
-    <div id="services" class="content-section hidden w-full bg-gray-800 text-white p-5 rounded-lg">
-        <div class="text-center mb-8 md:mb-12 relative z-10">
-            <h2 class="text-3xl md:text-4xl font-bold text-violet-400">My Services</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full"></div>
-        </div>
-    
-        <!-- Services Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
-    
-            <!-- Website Development -->
-            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
-                <h3 class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">Website Development</h3>
-                <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                    Crafting stunning, user-friendly websites that are responsive, fast, and optimized for all devices. I blend creativity with functionality to showcase your brand online.
-                </p>
-            </div>
-    
-            <!-- Web App Development -->
-            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
-                <h3 class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">Web App Development</h3>
-                <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                    Building interactive, scalable, and dynamic web applications tailored to solve complex problems and deliver seamless user experiences.
-                </p>
-            </div>
-    
-            <!-- E-commerce Solutions -->
-            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
-                <h3 class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">E-commerce Solutions</h3>
-                <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                    Developing powerful, secure, and high-performing online stores with payment integrations, inventory management, and user-friendly interfaces to boost sales.
-                </p>
-            </div>
-    
-            <!-- Dropshipping Solutions -->
-            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
-                <h3 class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">Dropshipping Solutions</h3>
-                <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                    Creating efficient dropshipping systems that automate inventory management, streamline order fulfillment, and simplify business operations.
-                </p>
-            </div>
-    
-            <!-- Institutional Management Softwares -->
-            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
-                <h3 class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">Institutional Management Softwares</h3>
-                <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                    Designing customized software for schools, hospitals, churches and companies to enhance administration, streamline communication, and boost productivity.
-                </p>
-            </div>
-    
-            <!-- Inventory and Sales Management Softwares -->
-            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gray-900 p-6">
-                <h3 class="text-xl font-semibold text-violet-400 mb-3 group-hover:text-violet-500 transition-colors duration-300">Inventory & Sales Management</h3>
-                <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                    Building efficient systems to manage inventory, track sales, generate reports, and optimize business operations for better decision-making.
-                </p>
-            </div>
-            
-        </div>
-    </div>
-    
-    
+    <script>
 
-    <div id="contact" class="content-section hidden w-full h-full text-white p-5 rounded-lg ">
-
-        <div class="text-center mb-8 md:mb-12 relative z-10">
-            <h2 class="text-3xl md:text-4xl font-bold text-violet-400">Contact Me</h2>
-         <div class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500   to-purple-600 mx-auto rounded-full">
-
-        </div>
-        </div>
-     
-
-<div class="max-w-4xl mx-auto mt-10">
-    <div class="grid md:grid-cols-2 gap-8 ">
-      
-      <!-- Contact Info Section -->
-      <div class="space-y-6">
-  
-        <!-- Phone -->
-        <a href="tel:0547539112" class="flex items-center space-x-4 hover:opacity-80 transition">
-            <div class="p-3 rounded-full bg-violet-500/20">
-              <i class="fa fa-phone text-violet-400 text-xl"></i>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-200">Phone</h3>
-              <p class="text-gray-400">+233 547539112</p>
-            </div>
-          </a>
-      
-        <!-- Email -->
-        <a href="mailto:michaeloppong03@gmail.com" class="flex items-center space-x-4 hover:opacity-80 transition">
-            <div class="p-3 rounded-full bg-violet-500/20">
-              <i class="fa fa-envelope text-violet-400 text-xl"></i>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-200">Email</h3>
-              <p class="text-gray-400 break-all">michaeloppong03@gmail.com</p>
-            </div>
-          </a>
-      
-        <!-- Location -->
-        <a href="https://www.google.com/maps/accra" target="_blank" class="flex items-center space-x-4 hover:opacity-80 transition">
-            <div class="p-3 rounded-full bg-violet-500/20">
-              <i class="fa fa-map-marker text-violet-400 text-xl"></i>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-200">Location</h3>
-              <p class="text-gray-400">Accra, Ghana</p>
-            </div>
-          </a>
-      
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/michael-oppong-7336a9186/" target="_blank" class="flex items-center space-x-4 hover:opacity-80 transition">
-            <div class="p-3 rounded-full bg-violet-500/20">
-              <i class="fa fa-linkedin text-violet-400 text-xl"></i>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-200">LinkedIn</h3>
-              <p class="text-gray-400">linkedin.coom/michael</p>
-            </div>
-          </a>
-      
-      </div>
-      
-  
-      <!-- Contact Form -->
-      <form class="space-y-4">
-        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-lg bg-white-800 text-gray-200 border-gray-700 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-colors" required>
-  
-        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-white-800 text-gray-200 border-gray-700 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-colors" required>
-  
-        <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-3 rounded-lg bg-white-800 text-gray-200 border-gray-700 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-colors" required></textarea>
-  
-        <button type="submit" class="w-full py-3 px-6 rounded-lg bg-violet-800 hover:bg-violet-700 text-white font-semibold transition-colors">Send Message</button>
-      </form>
-  
-    </div>
-  </div>
-
-        
-    </div>
-
-</div>
-
-<script>
-        
     </script>
 
 </body>
