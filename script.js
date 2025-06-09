@@ -86,7 +86,7 @@ const menuToggle = document.getElementById("menu-toggle");
         });
 
 
-        const skills = ["Web developer", "Programmer"];
+        const skills = ["Web developer", "Software engineer"];
         let index = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -105,7 +105,7 @@ const menuToggle = document.getElementById("menu-toggle");
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 index = (index + 1) % skills.length;
-                setTimeout(type, 500);
+                setTimeout(type, 800);
             } else {
                 setTimeout(type, isDeleting ? 50 : 150);
             }
@@ -117,3 +117,28 @@ const menuToggle = document.getElementById("menu-toggle");
         }, 500);
 
         type();
+
+
+        document.getElementById('contact-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const form = e.target;
+      const data = {
+        name: form.name.value.trim(),
+        email: form.email.value.trim(),
+        message: form.message.value.trim()
+      };
+
+      try {
+        const res = await fetch('/https://my-port-folio-backend-4s81zf92r-myoppongs-projects.vercel.app/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (!res.ok) throw new Error(await res.text());
+        alert('✅ Thanks! Your message has been sent.');
+        form.reset();
+      } catch (err) {
+        console.error(err);
+        alert('❌ Oops! There was a problem sending your message.');
+      }
+    });
