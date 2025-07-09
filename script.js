@@ -38,7 +38,7 @@ const menuToggle = document.getElementById("menu-toggle");
 
 
         document.addEventListener("DOMContentLoaded", function () {
-            const menuItems = document.querySelectorAll(".menu-item, nav ul li a"); // Select both sidebar & mobile menu links
+            const menuItems = document.querySelectorAll(".menu-item, nav ul li a");
             const sections = document.querySelectorAll(".content-section");
             const mobileMenu = document.getElementById("mobile-menu");
 
@@ -119,26 +119,39 @@ const menuToggle = document.getElementById("menu-toggle");
         type();
 
 
-        document.getElementById('contact-form').addEventListener('submit', async e => {
-      e.preventDefault();
-      const form = e.target;
-      const data = {
+   document.getElementById('contact-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const form = e.target;
+    // Get the submit button from the form
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    const data = {
         name: form.name.value.trim(),
         email: form.email.value.trim(),
         message: form.message.value.trim()
-      };
+    };
 
-      try {
+    // 1. Disable the button and change text to show loading
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending Message...';
+
+    try {
         const res = await fetch('https://michaeloppongbackend.onrender.com/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
         });
         if (!res.ok) throw new Error(await res.text());
-        alert('✅ Thanks! Your message has been sent.');
+        alert('Thanks! Your message has been sent.');
         form.reset();
-      } catch (err) {
+    } catch (err) {
         console.error(err);
-        alert('❌ Oops! There was a problem sending your message.');
-      }
-    });
+        alert('Oops! There was a problem sending your message.');
+    } finally {
+        // 2. Re-enable the button and restore original text after the process is complete
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send Message';
+    }
+});
