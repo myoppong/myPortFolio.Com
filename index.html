@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="https://michaeloppong.netlify.app/images/IMG_5348.jpg" type="image/png">
+    <meta name="description" content="Michael Oppong's Portfolio - Showcasing my skills in Web Development and Software Engineering.">
     <title>My Portfolio</title>
+    <!-- Swiper.js CSS and JS for the Project Gallery -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -147,7 +152,7 @@
                 <!-- Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-10">
                     <button
-                        onclick="window.open('https://drive.google.com/file/d/1XuPA1aXx294kL2Sgi-IxurQmno5ZwZfP/view?usp=sharing', '_blank')"
+                        onclick="window.open('https://drive.google.com/file/d/18hN6cFkFq1T1XT-Z-BrtjJb5vL7STzgV/view?usp=sharing', '_blank')"
                         class="w-full md:w-auto px-6 md:px-8 py-2 md:py-3 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 text-white rounded-lg font-medium flex items-center justify-center gap-2 text-sm md:text-base shadow-lg hover:shadow-violet-500/25 transition-all"
                         tabindex="0" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg"
                             class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -345,7 +350,7 @@
                             <div class="w-5/12 bg-[#211638be] rounded-xl p-4 text-white">
                                 <time class="block font-mono italic">May,2025</time>
                                 <p class="font-medium text-xl">Web Developer</p>
-                                <p class="text-sm">Meltwater Enterprenueral School</p>
+                                <p class="text-sm">Mest Africa School</p>
                             </div>
                         </li>
 
@@ -405,7 +410,7 @@
                             <div
                                 class="w-fit bg-gradient-to-r from-purple-700 to-indigo-600 text-white rounded-xl p-3.5 shadow-lg hover:scale-105 transform transition duration-300">
                                 <time class="block font-mono italic text-sm opacity-80">Oct 2024 - Present</time>
-                                <h3 class="font-semibold text-xl mb-2">Lead For Ghana <br>~ Fellow (Volunteer)</h3>
+                                <h3 class="font-semibold text-xl mb-2">Lead For Ghana <br>~ Associate</h3>
                                 <ul class="list-disc pl-5 text-sm space-y-1">
                                     <li>Advocate for improvement in school facilities and essential resources.</li>
                                     <li>Collaborated with educators for impactful change in education.</li>
@@ -469,117 +474,153 @@
 
         </div>
 
-        <div id="projects" class="content-section hidden w-full text-white p-5 rounded-lg">
-            <div class="max-w-6xl mx-auto px-6 py-12">
-                <div class="text-center mb-8 md:mb-12 relative z-10">
-                    <h2 class="text-3xl md:text-4xl font-bold text-violet-400">My Projects</h2>
-                    <div
-                        class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full">
+<!-- ========== PROJECTS SECTION ========== -->
+<div id="projects" class="content-section hidden w-full text-white p-5 rounded-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 ">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-violet-400">My Projects</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 mx-auto rounded-full"></div>
+            <p class="mt-4 text-gray-400">A selection of projects I've worked on.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div id="project-filters" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
+            <button class="filter-btn px-4 py-2 text-sm md:text-base font-semibold rounded-lg transition-all duration-300" data-filter="all">All</button>
+            <button class="filter-btn px-4 py-2 text-sm md:text-base font-semibold rounded-lg transition-all duration-300" data-filter="fullstack">Full-Stack</button>
+            <button class="filter-btn px-4 py-2 text-sm md:text-base font-semibold rounded-lg transition-all duration-300" data-filter="frontend">Front-End</button>
+            <button class="filter-btn px-4 py-2 text-sm md:text-base font-semibold rounded-lg transition-all duration-300" data-filter="contributions">Contributions</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- === Full-Stack Projects === -->
+            <div class="project-card transition-all duration-500 ease-in-out" data-category="fullstack">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <span class="absolute top-2 right-2 bg-purple-600 text-white text-xs font-bold px-2 py-1 rounded-full z-20">Full-Stack</span>
+                    <img src="./images/a.jpg" alt="Stock Mart" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105 bg-gray-800" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e1b2e/7f7f7f?text=Image+Not+Found';">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <h3 class="text-xl font-semibold text-white">Stock Mart</h3>
+                        <p class="text-sm text-gray-300 mt-1">An inventory and sales management system for retail shops.</p>
+                        <button onclick="openProjectModal('stock-mart')" class="mt-4 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Interfaces</button>
                     </div>
                 </div>
+            </div>
 
-                <div class="grid md:grid-cols-3 gap-6">
-                    <!-- RentMarkt -->
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img src="./images/rent.png" alt="RentMarkt"
-                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
-                        <div
-                            class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
-                            <h3 class="text-lg font-semibold text-white">RentMarkt</h3>
-                            <p class="text-sm text-gray-300 text-center">A platform for finding rooms for rent in Ghana.
-                            </p>
-                            <a href="https://your-rentmarkt-link.com" target="_blank"
-                                class="mt-2 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View
-                                Site</a>
-                        </div>
+            <div class="project-card transition-all duration-500 ease-in-out" data-category="fullstack">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <span class="absolute top-2 right-2 bg-purple-600 text-white text-xs font-bold px-2 py-1 rounded-full z-20">Full-Stack</span>
+                    <img src="./images/livestockimg.jpeg" alt="Livestock Market" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105 bg-gray-800" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e1b2e/7f7f7f?text=Image+Not+Found';">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <h3 class="text-xl font-semibold text-white">Livestock Market</h3>
+                        <p class="text-sm text-gray-300 mt-1">An e-commerce platform for farmers to sell livestock across the country.</p>
+                        <a href="#" target="_blank" class="mt-4 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Site</a>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Hotel Booking Website -->
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img src="./images/hotel.png" alt="Hotel Booking"
-                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
-                        <div
-                            class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
-                            <h3 class="text-lg font-semibold text-white">Hotel Booking</h3>
-                            <p class="text-sm text-gray-300 text-center">A seamless hotel booking website.</p>
-                            <a href="https://your-hotel-booking-link.com" target="_blank"
-                                class="mt-2 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View
-                                Site</a>
-                        </div>
+            <div class="project-card transition-all duration-500 ease-in-out" data-category="fullstack">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <span class="absolute top-2 right-2 bg-purple-600 text-white text-xs font-bold px-2 py-1 rounded-full z-20">Full-Stack</span>
+                    <img src="./images/evently.jpeg" alt="Evently" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105 bg-gray-800" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e1b2e/7f7f7f?text=Image+Not+Found';">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <h3 class="text-xl font-semibold text-white">Evently</h3>
+                        <p class="text-sm text-gray-300 mt-1">A platform for event organizers to create events and sell tickets.</p>
+                        <a href="#" target="_blank" class="mt-4 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Site</a>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Said Africa -->
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img src="./images/news.png" alt="Said Africa"
-                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
-                        <div
-                            class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
-                            <h3 class="text-lg font-semibold text-white">Said Africa</h3>
-                            <p class="text-sm text-gray-300 text-center">A news portal for Africa.</p>
-                            <a href="https://your-said-africa-link.com" target="_blank"
-                                class="mt-2 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View
-                                Site</a>
-                        </div>
+            <!-- === Front-End Projects === -->
+            <div class="project-card transition-all duration-500 ease-in-out" data-category="frontend">
+                 <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full z-20">Front-End</span>
+                    <img src="./images/news.png" alt="Said Africa" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <h3 class="text-xl font-semibold text-white">Said Africa</h3>
+                        <p class="text-sm text-gray-300 mt-1">A news portal for African content.</p>
+                        <a href="#" target="_blank" class="mt-4 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Site</a>
                     </div>
-
-                    <!-- Student Records System REST API -->
-                    <div
-                        class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
-                        <i
-                            class="fa-solid fa-database text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
-                        <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Student Records
-                            System API</h3>
-                        <p class="text-sm text-gray-300 text-center mt-2">Built to handle CRUD operations for student
-                            data.</p>
-                        <a href="https://github.com/your-github-link" target="_blank"
-                            class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View
-                            on GitHub</a>
+                </div>
+            </div>
+            <div class="project-card transition-all duration-500 ease-in-out" data-category="frontend">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full z-20">Front-End</span>
+                    <img src="./images/conx.jpeg" alt="Consr Lodge Website" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <h3 class="text-xl font-semibold text-white">Consr Lodge</h3>
+                        <p class="text-sm text-gray-300 mt-1">A modern front-end for a hospitality service.</p>
+                        <a href="https://consrlodge.netlify.app/" target="_blank" class="mt-4 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Site</a>
                     </div>
-
-                    <!-- Gift Wishlist App REST API -->
-                    <div
-                        class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
-                        <i
-                            class="fa-solid fa-gift text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
-                        <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Gift Wishlist
-                            App API</h3>
-                        <p class="text-sm text-gray-300 text-center mt-2">Manages CRUD operations for gift wishlists.
-                        </p>
-                        <a href="https://github.com/your-github-link" target="_blank"
-                            class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View
-                            on GitHub</a>
+                </div>
+            </div>
+            <div class="project-card transition-all duration-500 ease-in-out" data-category="frontend">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full z-20">Front-End</span>
+                    <img src="./images/trinity.jpeg" alt="Holy Trinity Guesthouse" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <h3 class="text-xl font-semibold text-white">Holy Trinity Guesthouse</h3>
+                        <p class="text-sm text-gray-300 mt-1">A clean and welcoming website for a guesthouse.</p>
+                        <a href="https://holytrinityguesthouse.netlify.app/" target="_blank" class="mt-4 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Site</a>
                     </div>
-
-                    <!-- Advertising Portal REST API -->
-                    <div
-                        class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
-                        <i
-                            class="fa-solid fa-gift text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
-                        <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Advertising
-                            Portal API</h3>
-                        <p class="text-sm text-gray-300 text-center mt-2">Handles CRUD operations for ads and client
-                            data.</p>
-                        <a href="https://github.com/your-github-link" target="_blank"
-                            class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View
-                            on GitHub</a>
+                </div>
+            </div>
+            <div class="project-card transition-all duration-500 ease-in-out" data-category="frontend">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full z-20">Front-End</span>
+                    <img src="./images/greenfield.jpeg" alt="Greenfield Hotel" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <h3 class="text-xl font-semibold text-white">Greenfield Hotel</h3>
+                        <p class="text-sm text-gray-300 mt-1">An elegant website for a hotel in Asylum Down, Accra.</p>
+                        <a href="https://greenfieldhotelgh.com/" target="_blank" class="mt-4 px-4 py-2 bg-violet-600 text-white text-sm rounded hover:bg-violet-700 transition">View Site</a>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Library Management App -->
-                    <div
-                        class="relative group overflow-hidden rounded-lg bg-[#1f1f1f] hover:bg-violet-700 transition duration-300 p-6 text-center flex flex-col items-center justify-center">
-                        <i
-                            class="fa-solid fa-book text-violet-400 text-5xl mb-4 group-hover:text-white transition duration-300"></i>
-                        <h3 class="text-lg font-semibold group-hover:text-white transition duration-300">Library
-                            Management App</h3>
-                        <p class="text-sm text-gray-300 text-center mt-2">Manages CRUD operations for books and members.
-                        </p>
-                        <a href="https://github.com/your-github-link" target="_blank"
-                            class="mt-4 px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition">View
-                            on GitHub</a>
+            <!-- === Contributions === -->
+            <div class="project-card transition-all duration-500 ease-in-out" data-category="contributions">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg bg-[#242131] h-full flex flex-col">
+                    <span class="absolute top-2 right-2 bg-teal-500 text-white text-xs font-bold px-2 py-1 rounded-full z-20">Contribution</span>
+                    <div class="p-6 flex-grow flex flex-col justify-center items-center text-center">
+                        <i class="fa fa-database text-violet-400 text-5xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-white">Student Records System API</h3>
+                        <p class="text-sm text-gray-300 mt-2 flex-grow">Contributed to a REST API for handling CRUD operations for student data.</p>
+                        <a href="#" target="_blank" class="mt-4 px-4 py-2 bg-gray-700 text-white text-sm rounded hover:bg-gray-800 transition">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card transition-all duration-500 ease-in-out" data-category="contributions">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg bg-[#242131] h-full flex flex-col">
+                    <span class="absolute top-2 right-2 bg-teal-500 text-white text-xs font-bold px-2 py-1 rounded-full z-20">Contribution</span>
+                    <div class="p-6 flex-grow flex flex-col justify-center items-center text-center">
+                        <i class="fa fa-gift text-violet-400 text-5xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-white">Gift Wishlist App API</h3>
+                        <p class="text-sm text-gray-300 mt-2 flex-grow">Contributed to a REST API that manages CRUD operations for gift wishlists.</p>
+                        <a href="#" target="_blank" class="mt-4 px-4 py-2 bg-gray-700 text-white text-sm rounded hover:bg-gray-800 transition">View on GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- ========== Project Gallery Modal (for Stock Mart) ========== -->
+    <div id="project-gallery-modal" class="fixed inset-0 bg-black/90 flex items-center justify-center z-[100] opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="modal-content bg-transparent w-11/12 h-5/6 max-w-6xl relative transform transition-transform duration-300 scale-95">
+            <button onclick="closeProjectModal()" class="absolute -top-4 -right-4 md:top-0 md:right-0 text-white bg-red-600 rounded-full w-10 h-10 flex items-center justify-center text-2xl z-20 hover:bg-red-700 transition-colors">&times;</button>
+            <div class="swiper-container h-full" id="project-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides will be injected here by JavaScript -->
+                </div>
+                <!-- Add navigation buttons and pagination -->
+                <div class="swiper-button-next text-violet-400"></div>
+                <div class="swiper-button-prev text-violet-400"></div>
+                <div class="swiper-pagination !text-white"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
         <div id="skills" class="content-section hidden w-full bg-gray-800 text-white p-5 rounded-lg">
