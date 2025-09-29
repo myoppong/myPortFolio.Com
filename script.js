@@ -1,5 +1,4 @@
-// =========================================================================
-// SCRIPT INITIALIZATION
+
 // =========================================================================
 document.addEventListener("DOMContentLoaded", function () {
     // Initialize all functionalities once the document is loaded
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// =========================================================================
+
 // MOBILE MENU LOGIC
 // =========================================================================
 function initMobileMenu() {
@@ -35,7 +34,6 @@ function initMobileMenu() {
 }
 
 
-// =========================================================================
 // TYPEWRITER EFFECT LOGIC
 // =========================================================================
 function initTypewriter() {
